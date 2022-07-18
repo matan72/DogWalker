@@ -1,0 +1,82 @@
+/* ----------------- */
+/* already_signed.css  */
+/* ----------------- */
+
+body{
+	background-image:url("bush.jpg"); /* The image used */ 
+	background-repeat:no-repeat; /* Do not repeat the image */
+	background-size: cover;/*cover the entire page*/
+	text-align:center;/*center the image*/
+}
+
+.one{
+	color: white; /* The color of the font */
+	text-shadow: blue 2px 2px;/*chosen font shadow parameters-decoration*/
+	text-align:center;/*center the image*/
+	font-family: "Fjalla One", sans-serif;/*chosen font for the text*/
+	font-size: 50px; /*define font-size*/
+	font-weight: 600;/*chosen font size*/
+}
+
+.two{
+	color: white; /* The color of the font */
+	text-shadow: blue 2px 2px;/*chosen font shadow parameters-decoration*/
+	text-align:center;/*center the image*/
+	font-family: "Fjalla One", sans-serif;/*chosen font for the text*/
+	font-size: 65px; /*define font-size*/
+	font-weight: 600;/*chosen font size*/
+}
+	
+.push_button {
+	color:white;/*chosen color*/
+	size: 60px;
+	text-decoration:none;/*no chosen text decoration*/
+	line-height:43px;/*define line height parameter*/
+	text-shadow: black 1px 1px;/*chosen parameter for text shadow*/
+	font-weight: bold;/*define font style*/
+	font-family: "Fjalla One", sans-serif;/*chosen font for the text*/
+}
+
+
+nav {
+  max-width: 1500px;/*decoration parameter*/
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);/*decoration parameter*/
+  margin: 0 auto;/*decoration parameter*/
+  padding: 30px ;/*decoration parameter*/
+  position: absolute;/*decoration parameter*/
+}
+
+nav ul {
+  text-align: center;/*decoration parameter*/
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);/*decoration parameter*/
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);/*decoration parameter*/
+
+}
+
+nav ul li {
+  display: inline-block;/*decoration parameter*/
+}
+
+nav ul li a {
+  padding: 18px;/*decoration parameter*/
+  font-family: "Fjalla One", sans-serif;/*chosen font for the text*/
+  text-transform:uppercase;/*decoration parameter*/
+  color: white;/*the chosen color*/
+  font-size: 18px;/*chosen font size*/
+  text-decoration: none;/*decoration parameter*/
+  display: block;/*decoration parameter*/
+  
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);/*decoration parameter*/
+  background: rgba(255, 255, 255, 0.1);/*decoration parameter*/
+  color: rgba(0, 35, 122, 0.7);/*decoration parameter*/
+  
+}
+
+
+div{
+	left: 0;/*decoration parameter*/
+	top:0;/*decoration parameter*/
+}

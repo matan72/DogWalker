@@ -1,0 +1,101 @@
+/* ----------------- */
+/* dog_walker_list.css  */
+/* ----------------- */
+
+body{
+	background-image:url("bush.jpg"); /* The image used */ 
+	background-repeat:no-repeat; /* Do not repeat the image */
+	background-size: cover;
+	}
+	
+.important_title{
+	text-align: center;
+	color: white; /*The color of the heading*/
+	font-family: "Fjalla One", sans-serif;/*chosen font for the text*/
+	text-shadow:3px 2px black;/*define shadow parameters*/
+	size: 80px;
+}
+	
+h1{
+	color: white; /*The color of the heading*/
+	text-align:center;/*center the image*/
+	font-family: "Fjalla One", sans-serif;/*chosen font for the text*/
+	text-shadow:3px 2px black;/*define shadow parameters*/
+	size: 80px;
+	}
+
+h2{
+	color: white; /*The color of the heading*/
+	text-align:center;/*center the image*/
+	font-family: "Fjalla One", sans-serif;/*chosen font for the text*/
+	text-shadow:3px 2px black;/*define shadow parameters*/
+	size: 50px;
+	}
+tr.labels_row td {
+	font-family: "Fjalla One", sans-serif;/*chosen font for the text*/
+	background-color: rgba(192,192,192,0.7);
+	font-weight: bold;/*the chosen font weight*/
+	font-size: 20px;/*the chosen font size*/
+	padding: 20px 20px/*padding parameters*/
+	border-style: solid;/*chosen border settings*/
+	border-width: 5px;/*define border settings*/
+    box-sizing: border-box;/*define border settings*/
+	
+}
+
+.second_table {
+	border-collapse: collapse;/*define border settings*/
+	opacity: 0.8;
+	font-size: 20px;/*the chosen font size*/
+	background-color: rgba(192,192,192,0.7);/*chosen background color*/
+	width: 100%;}/*chosen width parameters*/
+
+.second_table:hover {background-color: #ddd;} /*chosen background color*/
+
+
+
+nav {
+  max-width: 1500px;/*decoration properties*/
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);/*decoration properties*/
+  margin: 0 auto;/*decoration properties*/
+  padding: 30px ;/*decoration properties*/
+  position: absolute;/*decoration properties*/
+}
+
+nav ul {
+  text-align: center;/*decoration properties*/
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);/*decoration properties*/
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);/*decoration properties*/
+
+}
+
+nav ul li {
+  display: inline-block;/*decoration properties*/
+}
+
+nav ul li a {
+  padding: 18px;/*decoration properties*/
+  font-family: "Fjalla One", sans-serif;/*chosen font for the text*/
+  text-transform:uppercase;/*decoration properties*/
+  color: white;/*chosen color*/
+  font-size: 18px;/*chosen size*/
+  text-decoration: none;/*decoration properties*/
+  display: block;/*decoration properties*/
+  
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);/*decoration properties*/
+  background: rgba(255, 255, 255, 0.1);/*decoration properties*/
+  color: rgba(0, 35, 122, 0.7);/*decoration properties*/
+  
+}
+
+
+div{
+	left: 0;/*decoration properties*/
+	top:0;/*decoration properties*/
+}
+
+	
+	

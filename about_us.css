@@ -1,0 +1,73 @@
+/* ----------------- */
+/* about_us.css  */
+/* ----------------- */
+
+
+body {
+	background-image:url("row_dogs.jpg");/* The image used */
+	background-position:center;/* Center the image */
+	background-repeat:no-repeat; /* Do not repeat the image */
+	background-size:cover; /*Resize the background image to cover the entire container */
+	
+}
+h1 {
+	color: #3366ff;/*chosen font color*/
+	text-align: center;/*center the image*/
+	font-size: 80px; /*define font-size*/
+	font-family: "Fjalla One", sans-serif;/*chosen font for the text*/
+	text-shadow:2px 2px black;/*define shadow parameters*/
+
+	
+}
+p {
+	font-family: "Fjalla One", sans-serif;/*chosen font for the text*/
+	font-size: 23px;/*chosen font size*/
+	text-align: center;/*center the image*/
+	color: white;/*chosen font color*/
+	text-shadow:2px 2px black;/*define shadow parameters*/
+	margin-left:auto;/*used to place the table*/
+    margin-right:auto;/*used to place the table*/
+}
+
+nav {
+  max-width: 1500px;/*decoration parameters*/
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);/*decoration parameters*/
+  margin: 0 auto;/*decoration parameters*/
+  padding: 30px ;/*decoration parameters*/
+  position: absolute;/*decoration parameters*/
+}
+
+nav ul {
+  text-align: center;/*decoration parameters*/
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);/*decoration parameters*/
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);/*decoration parameters*/
+
+}
+
+nav ul li {
+  display: inline-block;/*decoration parameters*/
+}
+
+nav ul li a {
+  padding: 18px;/*decoration parameters*/
+  font-family: "Fjalla One", sans-serif;/*chosen font for the text*/
+  text-transform:uppercase;/*decoration parameters*/
+  color: white;/*chosen color*/
+  font-size: 18px;/*chosen size*/
+  text-decoration: none;/*decoration parameters*/
+  display: block;/*decoration parameters*/
+  
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);/*decoration parameters*/
+  background: rgba(255, 255, 255, 0.1);/*decoration parameters*/
+  color: rgba(0, 35, 122, 0.7);/*decoration parameters*/
+  
+}
+
+
+div{
+	left: 0;/*decoration parameters*/
+	top:0;/*decoration parameters*/
+}

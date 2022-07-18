@@ -1,0 +1,88 @@
+/* ----------------- */
+/* walk_form.css  */
+/* ----------------- */
+
+body{
+	background-image:url("bush.jpg"); /* The image used */ 
+	background-repeat:no-repeat; /* Do not repeat the image */
+	background-size: cover;/*cover the entire page*/
+	position: center;/*center the image*/
+}
+
+.important_text{
+	color: white; /* The color of the font */
+	font-family: "Fjalla One", sans-serif;/*chosen font for the text*/
+	text-align:center;/*center the image*/
+	font-size: 60px; /*define font-size*/
+}
+	
+.label{
+	color: white; /* The color of the font */
+	text-align:center;/*center the image*/
+	font-family: "Fjalla One", sans-serif;/*chosen font for the text*/
+	font-size: 25px; /*define font-size*/
+	font-weight: bold;/*decoration properties*/
+}
+
+table{
+	background-color: rgba(192,192,192,0.7);/*decoration properties*/
+	padding: 40px;/*decoration properties*/
+}
+
+
+.important_button{
+    font-family: "Fjalla One", sans-serif;/*chosen font for the text*/
+    font-weight: bold;/*decoration properties*/
+	size: 40px;/*text size*/
+    background-color: #EEEEEE;/*chosen color*/
+    color: #333333;/*chosen color*/
+    padding: 2px 6px 2px 6px;/*decoration properties*/
+    border-top: 3px solid #CCCCCC;/*decoration properties*/
+    border-right: 3px solid #333333;/*decoration properties*/
+    border-bottom: 1px solid #333333;/*decoration properties*/
+    border-left: 1px solid #CCCCCC;/*decoration properties*/
+	}
+	
+
+nav {
+  max-width: 1500px;/*decoration properties*/
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);/*decoration properties*/
+  margin: 0 auto;/*decoration properties*/
+  padding: 30px ;/*decoration properties*/
+  position: absolute;/*decoration properties*/
+}
+
+nav ul {
+  text-align: center;/*decoration properties*/
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);/*decoration properties*/
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);/*decoration properties*/
+
+}
+
+nav ul li {
+  display: inline-block;/*decoration properties*/
+}
+
+nav ul li a {
+  padding: 18px;/*decoration properties*/
+  font-family: "Fjalla One", sans-serif;/*chosen font for the text*/
+  text-transform:uppercase;/*decoration properties*/
+  color: white;/*chosen color*/
+  font-size: 18px;/*chosen size*/
+  text-decoration: none;/*decoration properties*/
+  display: block;/*decoration properties*/
+  
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);/*decoration properties*/
+  background: rgba(255, 255, 255, 0.1);/*decoration properties*/
+  color: rgba(0, 35, 122, 0.7);/*decoration properties*/
+  
+}
+
+
+div{
+	left: 0;/*decoration properties*/
+	top:0;/*decoration properties*/
+}
