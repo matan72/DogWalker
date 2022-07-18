@@ -1,0 +1,77 @@
+<html>
+<!--This page allow an owner to add a new dog to the system -->
+	<head>
+		<!-- page design -->
+    	<link rel="stylesheet" type="text/css" href="stylesheets/add_dog.css">
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    </head>
+	<body>
+	<div>
+		<nav>
+			<ul>
+				<li>
+					<a href="/about_us">About us</a>
+				</li>
+				<li>
+					<a href="/Logout">Log out</a>
+				</li>
+			</ul>
+		</nav>
+		</div>
+		<h1 class="important-text"> Add dog </h1>
+		<form action="/added_dog" method="post">
+            <table class= "table_style">
+                <tr>
+                    <td class="label">Name</td>
+                    <td >
+						<input type="text" name="name">
+					</td>
+                </tr>
+                <tr>
+                    <td class="label">Age</td>
+                    <td>
+						<select name="age" class="numeric-values">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15 +</option>
+						</select>
+					</td>
+                </tr>
+                <tr>
+                    <td class="label">Breed</td>
+                    <td>
+						<select type= "radio" name="breed" >
+							<option value="Lavrador">Lavrador</option>
+							<option value="Golden">Golden</option>
+							<option value="Haskey">Haskey</option>
+							<option value="Deni">Deni</option>
+							<option value="Poodle">Poodle</option>
+					</td>
+                </tr>
+                <tr>
+                    <td class="label">Gender</td>
+					<td>
+						<input class="regular" type="radio" name="gender" value="male"> male</br>
+						<input class="regular" type="radio" name="gender" value="female"> female</br>
+					</td>
+				<tr>
+					<td>
+						<input type="submit" value="Add" class="important_button">  
+					</td>        
+                </tr>
+            </table>
+        </form>
+	</body>
+</html>

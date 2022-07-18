@@ -1,0 +1,75 @@
+<!-- Displays a list of dog walkers that match to the dog owner in an HTML table,
+ then the dog owner can choose his dog walker and day-->
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<!-- External CSS design -->
+		<link rel="stylesheet" type="text/css" href="stylesheets/dog_walker_list.css">
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+	</head>
+	
+	<body>
+		<div>
+		<nav>
+			<ul>
+				<li>
+					<a href="/about_us">About us</a>
+				</li>
+				<li>
+					<a href="/Logout">log out</a>
+				</li>
+			</ul>
+		</nav>
+		</div>
+         </br></br></br>
+		 <h1 class="important_title">Choose Your Dog Walker! </h1>
+		 <h2>Number of available walkers: {{num_walkers}}</h2>
+			<form action="/SubmitWalks?dog={{dog}}" method="post">
+			 <table class="second_table">
+				 <!--for each matching dog walker, the dog owner can see their email, name, phone number,
+				 city, daily salary (how much they charge) and the available days-->
+				<tr class="labels_row">
+					<td> Walker Email</td>
+					<td> Walker Name</td>
+					<td> Phone Number </td>
+					<td> Walker City </td>
+					<td> Daily Salary </td>
+					<td></td>
+					<td> Available Day </td>
+				</tr>
+
+		{% for potential_walker in potential_walkers %}
+		<!-- we insert to the table only the matching dog walkers-->
+			<tr>
+			</tr>
+			<tr></tr>
+				<td>
+					{{potential_walker.email}}<br>
+				</td>
+				<td>
+					{{potential_walker.f_name}} {{potential_walker.l_name}}<br>
+				</td>
+				<td>
+					{{potential_walker.p_num}}<br>
+				</td>
+				<td>
+					{{potential_walker.city}}<br>
+				</td>
+				<td>
+					{{potential_walker.d_salary}}<br>
+				</td>
+					{% for day in potential_walker.days %}
+					<td>
+					<!-- the dog owner will see all of the walker's available days-->
+					<input type="radio" name="walk_day" value="{{potential_walker.email}},{{day}}" required> {{day}}<br>
+					</td>
+					{% endfor %}
+			</tr>
+		</form>
+		{% endfor %}
+
+        </table>
+		<input type="submit" value="BOOK WALK!" class="important_button">
+	</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- create a sign up form for a user that want to sign up as an owner and want to use our services  -->
+<html>
+	<head>
+		<!-- page design -->
+    	<link rel="stylesheet" type="text/css" href="stylesheets/owner_sign_in_form.css">
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    </head>
+	<body>
+		<div>
+			<nav>
+				<ul>
+					<li>
+						<a href="/about_us">About us</a>
+					</li>
+					<li>
+						<a href="/Logout">log out</a>
+					</li>
+				</ul>
+			</nav>
+		</div></br></br></br></br></br></br>
+		<h1 class="important-text"> Sign Up As Owner </h1>
+		<form action="/signup_owner_signed" method="post">
+            <table>             
+				<tr>
+                    <td class="label"> First Name</td>
+                    <td >
+						<input type="text" name="f_name" required>
+					</td>
+                </tr>
+				<tr>
+                    <td class="label"> Last Name</td>
+                    <td >
+						<input type="text" name="l_name" required>
+					</td>
+                </tr>
+                <tr>
+                    <td class="label">Phone Number</td>
+                    <td>
+						<input type="tel" name="p_num" required >
+					</td>
+                </tr>
+                <tr>
+                    <td class="label">City</td>
+                     <td>
+						<select name="city">
+							<option value="Tel Aviv">Tel Aviv</option>
+							<option value="Rehovot">Rehovot</option>
+							<option value="Modiin">Modiin</option>
+							<option value="Netanya">Netanya</option>
+							<option value="Haifa">Haifa</option>
+						</select>
+					</td>
+                </tr> 
+				<tr>
+					<td>
+						<input type="submit" value="Sign Up" class="important_button">  
+					</td>        
+                </tr>
+            </table>
+        </form>
+	</body>
+</html>

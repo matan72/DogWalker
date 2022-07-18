@@ -1,0 +1,70 @@
+<!-- This page displays a form where the owner can search a walk for his dog and filter the walkers according to his preferences -->
+<html>
+	<head>
+		<!-- page design -->
+    	<link rel="stylesheet" type="text/css" href="stylesheets/walk_form.css">
+    </head>
+	<body>
+			<div>
+		<nav>
+			<ul>
+				<li>
+					<a href="/about_us">About us</a>
+				</li>
+				<li>
+					<a href="/Logout">log out</a>
+				</li>
+			</ul>
+		</nav>
+		</div></br></br></br></br>
+		<h1 class="important-text"> sign your dog for a walk </h1>
+		<form action="/dog_walker_list" method="post">
+            <table>
+				<tr>
+					<td class="label"> Dog </td>
+					<td>
+					<select name="dog">
+					{% for dog in owner_dogs %}
+					<option value="{{dog[0]}}">{{dog[1]}}</option>
+						{% endfor %}
+					</select>
+					</td>		
+                </tr>
+                    <td class="label"> Days Of Walk</td>
+                    <td >
+						<input type="checkbox" name="day" value="sunday"> sunday<br>
+						<input type="checkbox" name="day" value="monday"> monday<br>
+						<input type="checkbox" name="day" value="tuesday"> tuesday<br>
+						<input type="checkbox" name="day" value="wednesday"> wednesday<br>
+						<input type="checkbox" name="day" value="thursday"> thursday<br>
+						<input type="checkbox" name="day" value="friday"> friday<br>
+						<input type="checkbox" name="day" value="saturday"> saturday<br>
+					</td>
+				</tr>
+                <tr>
+                    <td class="label">City</td>
+                     <td>
+						<select name="city">
+							<option value="Tel Aviv">Tel Aviv</option>
+							<option value="Rehovot">Rehovot</option>
+							<option value="Modiin">Modiin</option>
+							<option value="Netanya">Netanya</option>
+							<option value="Haifa">Haifa</option>
+						</select>
+					</td>
+                </tr>
+                <tr>
+                    <td class="label">Max Price</td>
+                    <td>
+						<input type="number" name="price" min="0" step="10" value="50">
+					</td>
+                </tr>
+				<tr>  
+					<td>
+						<input type="submit" value="Search Walker" class="important_button"> 
+					</td>        
+                </tr>
+            </table>
+        </form>
+	</body>
+</html>

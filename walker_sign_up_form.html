@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- This page creates a sign in form for a user that want to sign in as an walker and wants to offer his services
+ according to his preferences -->
+<html>
+	<head>
+		<!-- page design -->
+    	<link rel="stylesheet" type="text/css" href="stylesheets/walker_sign_in_form.css">
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    </head>
+	<body>
+		<div>
+		<nav>
+			<ul>
+				<li>
+					<a href="/about_us">About us</a>
+				</li>
+			</ul>
+		</nav>
+		</div></br></br></br>
+		<h1 class="important-text"> Sign Un  As A Walker </h1>
+		<form action="/signup_walker_signed" method="post">
+            <table>
+				 <tr>
+                    <td class="label"> First Name</td>
+                    <td >
+						<input type="text" name="f_name" required>
+					</td>
+                </tr>
+				 <tr>
+                    <td class="label"> Last Name</td>
+                    <td >
+						<input type="text" name="l_name" required>
+					</td>
+                </tr>
+                <tr>
+                    <td class="label">Phone Number</td>
+                    <td>
+						<input type="tel" name="p_num" required>
+					</td>
+                </tr>
+                <tr>
+                    <td class="label">City</td>
+                     <td>
+						<select name="city">
+							<option value="Tel Aviv">Tel Aviv</option>
+							<option value="Rehovot">Rehovot</option>
+							<option value="Modiin">Modiin</option>
+							<option value="Netanya">Netanya</option>
+							<option value="Haifa">Haifa</option>
+						</select>
+					</td>
+                </tr> 
+				<tr>
+                    <td class="label"> Days Of Work</td>
+                    <td >
+						<input type="checkbox" name="day" value="sunday"> sunday<br>
+						<input type="checkbox" name="day" value="monday"> monday<br>
+						<input type="checkbox" name="day" value="tuesday"> tuesday<br>
+						<input type="checkbox" name="day" value="wednesday"> wednesday<br>
+						<input type="checkbox" name="day" value="thursday"> thursday<br>
+						<input type="checkbox" name="day" value="friday"> friday<br>
+						<input type="checkbox" name="day" value="saturday"> saturday<br>
+					</td>
+				</tr>	
+				<tr>
+                    <td class="label">Price Per Day</td>
+                    <td>
+						<input type="number" name="price" min="0" value="50" required>
+					</td>
+                </tr>
+				<tr>
+                    <td class="label">Max Dogs Per Day</td>
+                    <td>
+						<input type="number" name="max_dogs" min="1" step="1" value="5" required>
+					</td>
+				</tr>	
+				<tr>
+                    <td class="label"> Breeds</td>
+                    <td>
+						<input type="checkbox" name="Breed" value="Lavrador"> Lavrador<br>
+						<input type="checkbox" name="Breed" value="Golden"> Golden<br>
+						<input type="checkbox" name="Breed" value="Haskey"> Haskey<br>
+						<input type="checkbox" name="Breed" value="Deni"> Deni<br>
+						<input type="checkbox" name="Breed" value="Poodle"> Poodle<br>
+					</td>	
+                </tr>
+                <tr>
+				<td>
+					<input type="submit" value="Sign Up" class="important_button"> 
+				</td>
+                </tr>
+            </table>
+        </form>
+	</body>
+</html>
